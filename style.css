@@ -1,0 +1,132 @@
+
+main{
+    background-color: white;
+    display: flex;
+    border-radius: 2rem;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+#newsletter{
+    margin-right: 3vw;
+    padding: 2vh 8vw ;
+}
+h1{
+    font-size: 9vw;
+}
+p{
+
+}
+
+ul li {
+    margin-bottom: 12px;
+    margin-left: -10px;
+    display: flex;
+    align-items: start;
+}
+
+ul li::before {
+    font-size: 1px;
+    content: url('/assets/images/icon-list.svg');
+    margin-right: 15px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin-bottom: 1vh;
+}
+#labelDiv{
+    display: flex;
+    justify-content: space-between
+}
+#errorMessage{
+    color: red;
+}
+form input[type="email"] {
+    margin-bottom: 2vh;
+    aspect-ratio: 6/1;
+}
+form input[type="submit"] {
+    margin-bottom: 2vh;
+    aspect-ratio: 6/1;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: none;
+}
+#popUp{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#successImg{
+    background-image: url('/assets/images/icon-success.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 8vh;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+#thanks{
+
+}
+#confirmation{
+
+}
+#dismiss{
+    margin-bottom: 2vh;
+    aspect-ratio: 6/1;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: none;
+}
+
+@media screen and (max-width: 425px){
+        main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #img{
+        background-image: url('/assets/images/illustration-sign-up-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        aspect-ratio: 1/0.8;
+    }
+    #popUp{
+        height: 100vh;
+        padding: 20vh 5vw 5vh 5vw;
+    }
+    }
+
+
+
+
+
+
+
+
+@media screen and (min-width: 426px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: hsl(234, 29%, 20%);
+    }
+    main{
+        padding: 2vh;
+    }
+#img{
+    background-image: url('/assets/images/illustration-sign-up-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 1;
+}
+}
