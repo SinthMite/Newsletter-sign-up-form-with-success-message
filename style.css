@@ -58,11 +58,21 @@ form input[type="email"] {
 form input[type="submit"] {
     margin-bottom: 2vh;
     aspect-ratio: 6/1;
-    background-color: hsl(234, 29%, 20%);
+    font-size: 1.1rem;
     color: white;
     border: none;
     border-radius: 10px;
+}
 
+#submit {
+    background: linear-gradient(90deg, hsl(234, 29%, 20%) 0%, hsl(234, 29%, 20%) 100%);
+    transition: background 1s ease, box-shadow 1s ease;
+    box-shadow: none;
+}
+
+#submit:hover {
+    background: linear-gradient(90deg, rgba(255,0,112,1) 0%, rgba(255,83,0,1) 100%);
+    box-shadow: 1px 1px 1rem rgba(255,83,0,1);
 }
 #popUp{
     background-color: white;
@@ -91,7 +101,15 @@ form input[type="submit"] {
     color: white;
     border: none;
     border-radius: 0.5rem;
+    transition: background 1s ease, box-shadow 1s ease; /* Transition background-color instead of background */
+    box-shadow: none; /* Initial box-shadow value */
+}
 
+
+#dismiss:hover {
+ /* Set the same color as the initial state to match */
+    background: linear-gradient(90deg, rgba(255,0,112,1) 0%, rgba(255,83,0,1) 100%);
+    box-shadow: 1px 1px 1rem rgba(255,83,0,1);
 }
 
 
