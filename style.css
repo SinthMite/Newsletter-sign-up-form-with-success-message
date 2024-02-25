@@ -72,9 +72,10 @@ form input[type="submit"] {
     aspect-ratio: 1;
 }
 #thanks{
-
+    margin-top: 3vh; 
 }
 #confirmation{
+    margin-top: 3vh; 
 
 }
 #dismiss{
@@ -83,7 +84,12 @@ form input[type="submit"] {
     background-color: hsl(234, 29%, 20%);
     color: white;
     border: none;
+    border-radius: 0.5rem;
+
 }
+
+
+
 
 @media screen and (max-width: 425px){
         main{
@@ -99,7 +105,11 @@ form input[type="submit"] {
     }
     #popUp{
         height: 100vh;
-        padding: 20vh 5vw 5vh 5vw;
+        padding: 20vh 5vw 0vh 5vw;
+    }
+    #dismiss{
+        position: relative;
+        top: 35vh;
     }
     }
 
@@ -129,4 +139,17 @@ form input[type="submit"] {
     width: 100%;
     aspect-ratio: 1;
 }
+#popUp{
+    margin: 10vw;
+    padding: 8vw;
+    border-radius: 2rem;
+}
+#confirmation{
+    margin-bottom: 3vh;
+    font-size: 1.2rem;
+}
+#dismiss{
+    font-size: 2vh
+}
+
 }
