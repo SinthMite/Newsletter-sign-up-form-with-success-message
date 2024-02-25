@@ -10,10 +10,15 @@ const dismiss = document.getElementById('dismiss');
 function newPage() {
     main.style.display = "none";
     popUp.style.display = "";
+    confirmation.textContent = `A confirmation email has been sent to ${emailInput.value}. Please open it and click the button inside to confirm your subscription.`;
+    emailInput.style.fontWeight = "800";
 }
 function fail(){
     errorMessage.hidden = false;
     emailInput.style.borderColor = "hsl(4, 100%, 67%)"
+    emailInput.style.backgroundColor = "hsla(4, 100%, 67%,0.2)"
+
+
 }
 function reset(){
     main.style.display = "";
@@ -28,8 +33,7 @@ form.addEventListener('submit', function(event){
         fail();
     } else {
         newPage();
-        confirmation.textContent = `A confirmation email has been sent to ${emailInput.value}. Please open it and click the button inside to confirm your subscription.`;
-        emailInput.style.fontWeight = "800";
+
     }
 })
 

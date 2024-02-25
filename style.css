@@ -10,15 +10,13 @@ main{
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
 }
-#newsletter{
-    margin-right: 3vw;
-    padding: 2vh 8vw ;
-}
-h1{
-    font-size: 9vw;
-}
-p{
 
+
+#join{
+    margin-top: 2rem;
+}
+ul{
+    margin-top: 2rem;
 }
 
 ul li {
@@ -42,7 +40,8 @@ form label{
 }
 #labelDiv{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-top: 2rem
 }
 #errorMessage{
     color: red;
@@ -50,13 +49,20 @@ form label{
 form input[type="email"] {
     margin-bottom: 2vh;
     aspect-ratio: 6/1;
+    border-radius: 10px;
+    border-color:  hsla(231, 7%, 60%,0.5);
+    padding-left: 1rem;
+
 }
+
 form input[type="submit"] {
     margin-bottom: 2vh;
     aspect-ratio: 6/1;
     background-color: hsl(234, 29%, 20%);
     color: white;
     border: none;
+    border-radius: 10px;
+
 }
 #popUp{
     background-color: white;
@@ -111,6 +117,13 @@ form input[type="submit"] {
         position: relative;
         top: 35vh;
     }
+    #newsletter{
+        margin-right: 3vw;
+        padding: 2vh 8vw ;
+    }
+    #newsletter h1{
+        font-size: 10vw;
+    }
     }
 
 
@@ -127,17 +140,22 @@ form input[type="submit"] {
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        background-color: hsl(234, 29%, 20%);
+        background-color: hsl(235, 18%, 26%);
     }
     main{
-        padding: 2vh;
+        padding: 2vh 0px;
+    }
+    #newsletter h1{
+        font-size: 3rem;
     }
 #img{
     background-image: url('/assets/images/illustration-sign-up-desktop.svg');
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    aspect-ratio: 1;
+    width: 40vw;
+    margin-right: 3vw;
+    border-radius: 1rem;
 }
 #popUp{
     margin: 10vw;
@@ -151,5 +169,9 @@ form input[type="submit"] {
 #dismiss{
     font-size: 2vh
 }
-
+#newsletter{
+    padding: 2vh 3vw ;
+    width: 50%;
+    margin-right: 4rem;
+}
 }
