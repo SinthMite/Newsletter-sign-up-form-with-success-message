@@ -28,7 +28,7 @@ ul li {
 
 ul li::before {
     font-size: 1px;
-    content: url('../assets/images/icon-list.svg');
+    content: url('./assets/images/icon-list.svg');
     margin-right: 15px;
 }
 form{
@@ -80,7 +80,7 @@ form input[type="submit"] {
     flex-direction: column;
 }
 #successImg{
-    background-image: url('../assets/images/icon-success.svg');
+    background-image: url('./assets/images/icon-success.svg');
     background-position: center;
     background-repeat: no-repeat;
     max-width: 8vh;
@@ -167,7 +167,7 @@ form input[type="submit"] {
         font-size: 3rem;
     }
 #img{
-    background-image: url('../assets/images/illustration-sign-up-desktop.svg');
+    background-image: url('/assets/images/illustration-sign-up-desktop.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
